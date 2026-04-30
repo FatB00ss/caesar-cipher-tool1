@@ -22,7 +22,6 @@
             align-items: center;
         }
 
-        /* главный кристалл */
         .crystal-card {
             max-width: 1400px;
             width: 100%;
@@ -30,34 +29,23 @@
             backdrop-filter: blur(12px);
             border-radius: 3rem;
             border: 1px solid rgba(72, 120, 255, 0.25);
-            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5), 0 0 0 0.5px rgba(120, 160, 255, 0.2);
+            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
             overflow: hidden;
-            transition: all 0.3s ease;
         }
 
-        /* шапка с блеском */
         .glow-header {
             padding: 1.8rem 2rem;
             background: linear-gradient(120deg, #0f1628, #0a0f1c);
             border-bottom: 1px solid #2a3350;
         }
 
-        .title-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
         h1 {
             font-size: 2rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #ffffff,  #9bbdff);
+            background: linear-gradient(135deg, #ffffff, #9bbdff);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            letter-spacing: -0.3px;
             display: inline-flex;
             align-items: center;
             gap: 12px;
@@ -70,7 +58,6 @@
             font-size: 0.7rem;
             font-weight: 600;
             color: #bbd4ff;
-            border: 1px solid #3b5690;
         }
 
         .sub {
@@ -82,17 +69,14 @@
             flex-wrap: wrap;
         }
 
-        /* 2 колонки: навигация + контент */
         .two-lanes {
             display: flex;
             flex-wrap: wrap;
         }
 
-        /* левая панель — элегантная */
         .control-pavilion {
             width: 280px;
             background: #0b1122cc;
-            backdrop-filter: blur(4px);
             border-right: 1px solid #222b48;
             padding: 1.8rem 1.2rem;
         }
@@ -146,11 +130,6 @@
             -webkit-appearance: none;
             background: #25315a;
             border-radius: 10px;
-            outline: none;
-        }
-
-        input[type="range"]:focus {
-            outline: none;
         }
 
         input[type="range"]::-webkit-slider-thumb {
@@ -160,8 +139,6 @@
             background: #7ea6ff;
             border-radius: 50%;
             cursor: pointer;
-            box-shadow: 0 0 6px #3c7eff;
-            border: none;
         }
 
         .shift-digital {
@@ -193,25 +170,15 @@
             cursor: pointer;
             transition: 0.2s;
             font-size: 0.85rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
         }
 
         .btn-primary {
             background: #2550b0;
-            box-shadow: 0 6px 14px rgba(37, 80, 176, 0.3);
         }
 
         .btn-primary:hover {
             background: #2e62cf;
             transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            background: #121b39;
-            border: 1px solid #3e5090;
         }
 
         .examples {
@@ -231,7 +198,6 @@
             color: #bbd0ff;
         }
 
-        /* правая часть — текстовая лаба */
         .workspace {
             flex: 1;
             padding: 1.8rem 2rem;
@@ -239,7 +205,6 @@
 
         .glass-panel {
             background: #0a1022cc;
-            backdrop-filter: blur(8px);
             border-radius: 1.8rem;
             border: 1px solid #2a345b;
             padding: 1.2rem;
@@ -250,13 +215,7 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 0.8rem;
-            align-items: baseline;
             flex-wrap: wrap;
-        }
-
-        .panel-title label {
-            font-weight: 600;
-            color: #cedbff;
         }
 
         textarea {
@@ -266,22 +225,20 @@
             border-radius: 1.3rem;
             padding: 1rem;
             color: #f0f6ff;
-            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-family: 'Courier New', monospace;
             font-size: 0.95rem;
             resize: vertical;
-            line-height: 1.45;
         }
 
         .result-brick {
             background: #020617;
             border-radius: 1.3rem;
             padding: 1rem;
-            margin-top: 0.5rem;
             border-left: 5px solid #5c8aff;
         }
 
         .result-text {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Courier New', monospace;
             font-size: 1rem;
             white-space: pre-wrap;
             word-break: break-word;
@@ -289,8 +246,6 @@
         }
 
         .stats {
-            display: flex;
-            gap: 16px;
             font-size: 0.7rem;
             color: #8c9ed0;
             margin-top: 10px;
@@ -302,48 +257,20 @@
             padding: 12px;
             font-size: 0.7rem;
             color: #8192c2;
-            border: 1px solid #262f52;
-        }
-
-        hr {
-            border-color: #293155;
-            margin: 10px 0;
-        }
-
-        @media (max-width: 740px) {
-            .control-pavilion {
-                width: 100%;
-                border-right: none;
-                border-bottom: 1px solid #222b48;
-            }
-            body {
-                padding: 1rem;
-            }
-        }
-        .highlight {
-            color: #ffdb7e;
-        }
-        kbd {
-            background: #00000055;
-            border-radius: 6px;
-            padding: 2px 6px;
         }
     </style>
 </head>
 <body>
 <div class="crystal-card">
     <div class="glow-header">
-        <div class="title-row">
-            <h1>✨ Цезарь · Крипто-студия <span class="badge-pro">v2.0 | 33 буквы + Ё</span></h1>
-        </div>
+        <h1>✨ Цезарь · Крипто-студия <span class="badge-pro">v2.0 | 33 буквы + Ё</span></h1>
         <div class="sub">
             <span>🔐 Автовзлом по частотам</span>
-            <span>⚡ Ручной режим с полным контролем</span>
+            <span>⚡ Ручной режим</span>
             <span>🇷🇺🇬🇧 Русский / English</span>
         </div>
     </div>
     <div class="two-lanes">
-        <!-- Управление -->
         <div class="control-pavilion">
             <div class="mode-switch" id="modeSwitch">
                 <div class="mode-option" data-mode="auto">🔍 ВЗЛОМ (авто)</div>
@@ -353,100 +280,89 @@
             <div id="manualPanel">
                 <div class="shift-card">
                     <div class="slider-label">
-                        <span>📀 Сдвиг (0–32 / 0–25)</span>
-                        <span id="shiftRangeLabel">значение</span>
+                        <span>📀 Сдвиг (0–32)</span>
                     </div>
                     <input type="range" id="shiftSlider" min="0" max="32" value="5">
                     <div class="shift-digital" id="shiftValueDisplay">сдвиг = 5</div>
                 </div>
                 <div class="action-buttons">
-                    <button id="encryptActionBtn" class="btn btn-primary">🔒 ЗАШИФРОВАТЬ (левый → правый)</button>
-                    <button id="decryptActionBtn" class="btn btn-outline">🔓 РАСШИФРОВАТЬ (левый → правый)</button>
+                    <button id="encryptActionBtn" class="btn btn-primary">🔒 ЗАШИФРОВАТЬ</button>
+                    <button id="decryptActionBtn" class="btn">🔓 РАСШИФРОВАТЬ</button>
                 </div>
             </div>
 
             <div id="autoPanel" style="display: none;">
                 <div class="shift-card">
-                    <div style="font-size:0.8rem; margin-bottom:12px;">📊 Частотный анализ букв</div>
                     <button id="crackAutoBtn" class="btn btn-primary" style="width:100%;">⚡ АВТОМАТИЧЕСКИЙ ВЗЛОМ</button>
-                    <div class="stats" style="justify-content:center; margin-top:12px;">Подберёт сдвиг за секунду</div>
+                    <div class="stats" style="text-align:center; margin-top:12px;">Подберёт сдвиг за секунду</div>
                 </div>
             </div>
 
             <div class="examples">
                 <div class="ex-chip" data-example="ru">📖 Рус: "Привет, как дела?"</div>
                 <div class="ex-chip" data-example="en">🌍 English: "Hello Caesar"</div>
-                <div class="ex-chip" data-example="crypt">🔐 Зашифр. образец (сдвиг 11)</div>
-                <div class="ex-chip" id="clearAllBtn">🧹 Очистить поля</div>
-            </div>
-            <div class="info-note" style="margin-top: 20px;">
-                💡 <strong>Как это работает</strong><br>
-                • Русский алфавит: 33 буквы (А-Я + Ё)<br>
-                • Английский: 26 букв (A-Z)<br>
-                • Автовзлом сравнивает частоты букв с эталоном, находит верный сдвиг.<br>
-                • Ручной режим: вы сами задаёте сдвиг.
+                <div class="ex-chip" data-example="crypt">🔐 Зашифр. образец</div>
+                <div class="ex-chip" id="clearAllBtn">🧹 Очистить</div>
             </div>
         </div>
 
-        <!-- Рабочая зона текст -->
         <div class="workspace">
             <div class="glass-panel">
                 <div class="panel-title">
-                    <label>📝 ИСХОДНЫЙ ТЕКСТ (шифр/открытый)</label>
-                    <span class="stats" id="inputLangHint">язык: определится авто</span>
+                    <label>📝 ИСХОДНЫЙ ТЕКСТ</label>
+                    <span class="stats" id="inputLangHint">язык: определится</span>
                 </div>
-                <textarea id="inputMsg" rows="4" placeholder="Введите текст для шифрования, дешифровки или взлома..."></textarea>
+                <textarea id="inputMsg" rows="4" placeholder="Введите текст для шифрования, дешифровки или взлома...">ФЭНЖИЧ</textarea>
             </div>
 
             <div class="glass-panel">
                 <div class="panel-title">
-                    <label>✨ РЕЗУЛЬТАТ / РАСШИФРОВКА</label>
-                    <span id="infoBadge" class="stats" style="background:#0b1022; padding:4px 12px; border-radius:40px;">готов к работе</span>
+                    <label>✨ РЕЗУЛЬТАТ</label>
+                    <span id="infoBadge" class="stats">готов</span>
                 </div>
                 <div class="result-brick">
-                    <div id="outputMessage" class="result-text">⭐ Нажмите "Зашифровать", "Расшифровать" или "Автовзлом"</div>
+                    <div id="outputMessage" class="result-text">⭐ Нажмите кнопку</div>
                 </div>
-                <div id="extraInfo" style="margin-top: 12px; font-size: 0.7rem; color: #98abdd;"></div>
+                <div id="extraInfo" class="stats"></div>
             </div>
             <div class="info-note">
-                🧠 Продвинутый алгоритм: корректно обрабатывает букву <strong>Ё</strong>, регистр и знаки препинания. При автовзломе анализирует частоту букв в тексте и сравнивает с эталонами русского / английского языка.
+                💡 Продвинутый алгоритм: корректно обрабатывает букву <strong>Ё</strong>, регистр.<br>
+                Автовзлом анализирует частоту букв и находит правильный сдвиг автоматически.
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    // ---------- АЛФАВИТЫ 33 РУС + Ё, 26 АНГЛ ----------
+    // АЛФАВИТЫ
     const RUS_LOWER = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
     const RUS_UPPER = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
     const ENG_LOWER = "abcdefghijklmnopqrstuvwxyz";
     const ENG_UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    // эталонные частоты рус (с учётом Ё)
-    const rusFreqMap = {
+    // Частоты для русского
+    const rusFreq = {
         'а':0.0801,'б':0.0159,'в':0.0454,'г':0.0170,'д':0.0298,'е':0.0845,'ё':0.0020,'ж':0.0094,'з':0.0165,'и':0.0735,
         'й':0.0121,'к':0.0349,'л':0.0443,'м':0.0321,'н':0.0670,'о':0.1097,'п':0.0281,'р':0.0473,'с':0.0547,'т':0.0632,
         'у':0.0262,'ф':0.0026,'х':0.0097,'ц':0.0048,'ч':0.0144,'ш':0.0073,'щ':0.0036,'ъ':0.0004,'ы':0.0189,'ь':0.0173,
         'э':0.0032,'ю':0.0064,'я':0.0201
     };
-    const engFreqMap = {
+    const engFreq = {
         'a':0.08167,'b':0.01492,'c':0.02782,'d':0.04253,'e':0.12702,'f':0.02228,'g':0.02015,'h':0.06094,'i':0.06966,
         'j':0.00153,'k':0.00772,'l':0.04025,'m':0.02406,'n':0.06749,'o':0.07507,'p':0.01929,'q':0.00095,'r':0.05987,
         's':0.06327,'t':0.09056,'u':0.02758,'v':0.00978,'w':0.02360,'x':0.00150,'y':0.01974,'z':0.00074
     };
 
-    // ---- определение языка по тексту ----
     function detectLanguage(text) {
         let ru = 0, en = 0;
         for (let ch of text) {
-            if (RUS_LOWER.includes(ch.toLowerCase()) || RUS_UPPER.includes(ch)) ru++;
-            else if (ENG_LOWER.includes(ch.toLowerCase()) || ENG_UPPER.includes(ch)) en++;
+            if (RUS_LOWER.includes(ch.toLowerCase())) ru++;
+            else if (ENG_LOWER.includes(ch.toLowerCase())) en++;
         }
         if (ru === 0 && en === 0) return 'ru';
         return ru >= en ? 'ru' : 'en';
     }
 
-    // ---- универсальный сдвиг (символ) ----
     function shiftChar(ch, shift, lowAlph, upAlph) {
         const len = lowAlph.length;
         const lowIdx = lowAlph.indexOf(ch);
@@ -476,225 +392,153 @@
         }
     }
 
-    // ---- частотный анализ и взлом ----
-    function extractLettersOnly(text, lang) {
-        const alphabet = lang === 'ru' ? RUS_LOWER : ENG_LOWER;
-        const letters = [];
-        for (let ch of text) {
-            const low = ch.toLowerCase();
-            if (alphabet.includes(low)) letters.push(low);
-        }
-        return letters;
-    }
-
-    function computeFreq(letters, lang) {
-        const alphabet = lang === 'ru' ? RUS_LOWER : ENG_LOWER;
-        const freq = {};
-        for (let l of alphabet) freq[l] = 0;
-        if (letters.length === 0) return freq;
-        for (let l of letters) if (freq[l] !== undefined) freq[l]++;
-        for (let l of alphabet) freq[l] /= letters.length;
-        return freq;
-    }
-
-    function similarityScore(obs, expected, lang) {
-        const alphabet = lang === 'ru' ? RUS_LOWER : ENG_LOWER;
-        let dot = 0, normObs = 0, normExp = 0;
-        for (let l of alphabet) {
-            const o = obs[l] || 0;
-            const e = expected[l] || 0;
-            dot += o * e;
-            normObs += o * o;
-            normExp += e * e;
-        }
-        if (normObs === 0 || normExp === 0) return 0;
-        return dot / (Math.sqrt(normObs) * Math.sqrt(normExp));
-    }
-
-    function autoCrackMaster(text) {
+    function autoCrack(text) {
         if (!text.trim()) return null;
-        const primaryLang = detectLanguage(text);
-        const maxShift = primaryLang === 'ru' ? 33 : 26;
-        const expectedMap = primaryLang === 'ru' ? rusFreqMap : engFreqMap;
-        let candidates = [];
+        const lang = detectLanguage(text);
+        const maxShift = lang === 'ru' ? 33 : 26;
+        const expectedFreq = lang === 'ru' ? rusFreq : engFreq;
+        let results = [];
+        
         for (let s = 0; s < maxShift; s++) {
-            const decrypted = caesarTransform(text, s, primaryLang);
-            const letters = extractLettersOnly(decrypted, primaryLang);
-            const freqObs = computeFreq(letters, primaryLang);
-            const sim = similarityScore(freqObs, expectedMap, primaryLang);
-            candidates.push({ shift: s, score: sim, decrypted });
-        }
-        candidates.sort((a,b) => b.score - a.score);
-        if (candidates[0].score < 0.22 && text.replace(/[^a-zA-Zа-яА-ЯёЁ]/g, '').length > 5) {
-            const altLang = primaryLang === 'ru' ? 'en' : 'ru';
-            const altMax = altLang === 'ru' ? 33 : 26;
-            const altExpected = altLang === 'ru' ? rusFreqMap : engFreqMap;
-            let altCandidates = [];
-            for (let s = 0; s < altMax; s++) {
-                const dec = caesarTransform(text, s, altLang);
-                const lettersAlt = extractLettersOnly(dec, altLang);
-                const freqAlt = computeFreq(lettersAlt, altLang);
-                const simAlt = similarityScore(freqAlt, altExpected, altLang);
-                altCandidates.push({ shift: s, score: simAlt, decrypted: dec });
+            const decrypted = caesarTransform(text, s, lang);
+            const letters = [];
+            for (let ch of decrypted) {
+                const low = ch.toLowerCase();
+                if ((lang === 'ru' && RUS_LOWER.includes(low)) || (lang === 'en' && ENG_LOWER.includes(low))) {
+                    letters.push(low);
+                }
             }
-            altCandidates.sort((a,b)=>b.score - a.score);
-            if (altCandidates[0].score > candidates[0].score + 0.07) {
-                return { best: altCandidates[0], all: altCandidates, lang: altLang };
+            const freq = {};
+            const alphabet = lang === 'ru' ? RUS_LOWER : ENG_LOWER;
+            for (let l of alphabet) freq[l] = 0;
+            if (letters.length > 0) {
+                for (let l of letters) if (freq[l] !== undefined) freq[l]++;
+                for (let l of alphabet) freq[l] /= letters.length;
             }
+            let similarity = 0;
+            for (let l of alphabet) {
+                similarity += (freq[l] || 0) * (expectedFreq[l] || 0);
+            }
+            results.push({ shift: s, score: similarity, decrypted: decrypted });
         }
-        return { best: candidates[0], all: candidates, lang: primaryLang };
+        results.sort((a,b) => b.score - a.score);
+        return { best: results[0], all: results.slice(0, 5), lang: lang };
     }
 
-    // -------- DOM elements ----------
+    // DOM элементы
     const inputTextarea = document.getElementById('inputMsg');
     const outputDiv = document.getElementById('outputMessage');
     const infoBadge = document.getElementById('infoBadge');
     const extraInfo = document.getElementById('extraInfo');
-    const modeOptions = document.querySelectorAll('.mode-option');
-    const manualPanelDiv = document.getElementById('manualPanel');
-    const autoPanelDiv = document.getElementById('autoPanel');
+    const manualPanel = document.getElementById('manualPanel');
+    const autoPanel = document.getElementById('autoPanel');
     const shiftSlider = document.getElementById('shiftSlider');
     const shiftValueDisplay = document.getElementById('shiftValueDisplay');
     const encryptBtn = document.getElementById('encryptActionBtn');
     const decryptBtn = document.getElementById('decryptActionBtn');
-    const crackAutoBtn = document.getElementById('crackAutoBtn');
-    const clearAllBtn = document.getElementById('clearAllBtn');
-    const inputLangHint = document.getElementById('inputLangHint');
+    const crackBtn = document.getElementById('crackAutoBtn');
+    const clearBtn = document.getElementById('clearAllBtn');
+    const modeOptions = document.querySelectorAll('.mode-option');
 
-    let currentMode = 'manual';   // manual / auto
+    let currentMode = 'manual';
 
-    function updateShiftRangeByLang(lang) {
-        const maxVal = (lang === 'ru' ? 32 : 25);
-        shiftSlider.max = maxVal;
-        let currentVal = parseInt(shiftSlider.value, 10);
-        if (currentVal > maxVal) shiftSlider.value = maxVal;
-        shiftValueDisplay.innerText = `сдвиг = ${shiftSlider.value}`;
-        if (currentMode === 'manual') infoBadge.innerHTML = `ручной режим, сдвиг ${shiftSlider.value}`;
+    function updateUI() {
+        if (currentMode === 'manual') {
+            manualPanel.style.display = 'block';
+            autoPanel.style.display = 'none';
+        } else {
+            manualPanel.style.display = 'none';
+            autoPanel.style.display = 'block';
+        }
     }
 
-    function refreshLanguageHint() {
-        const txt = inputTextarea.value;
-        if (txt.trim().length === 0) { inputLangHint.innerText = 'язык: —'; return; }
-        const lang = detectLanguage(txt);
-        inputLangHint.innerText = `язык: ${lang === 'ru' ? '🇷🇺 русский' : '🇬🇧 english'}`;
-        if (currentMode === 'manual') updateShiftRangeByLang(lang);
-    }
-
-    inputTextarea.addEventListener('input', () => {
-        refreshLanguageHint();
-    });
-
-    function setOutput(text, badgeText, extra = '') {
-        outputDiv.innerText = text;
-        infoBadge.innerHTML = badgeText;
-        extraInfo.innerHTML = extra;
-    }
-
-    // Ручные операции
     function manualEncrypt() {
         const text = inputTextarea.value;
-        if (!text.trim()) { setOutput('⚠️ Введите текст в левое поле', 'ошибка', ''); return; }
+        if (!text.trim()) { outputDiv.innerText = '⚠️ Введите текст'; return; }
         const lang = detectLanguage(text);
-        const shift = parseInt(shiftSlider.value, 10);
-        const encrypted = caesarTransform(text, shift, lang);
-        setOutput(encrypted, `🔒 зашифровано (сдвиг +${shift}, ${lang.toUpperCase()})`, `✅ Преобразование выполнено. Сдвиг ${shift} (${lang === 'ru' ? 'RU 33 буквы' : 'EN 26 букв'})`);
+        const shift = parseInt(shiftSlider.value);
+        const result = caesarTransform(text, shift, lang);
+        outputDiv.innerText = result;
+        infoBadge.innerText = `🔒 зашифровано (сдвиг +${shift})`;
+        extraInfo.innerText = '';
     }
 
     function manualDecrypt() {
         const text = inputTextarea.value;
-        if (!text.trim()) { setOutput('⚠️ Введите текст', 'ошибка', ''); return; }
+        if (!text.trim()) { outputDiv.innerText = '⚠️ Введите текст'; return; }
         const lang = detectLanguage(text);
-        const shift = parseInt(shiftSlider.value, 10);
-        const decrypted = caesarTransform(text, -shift, lang);
-        setOutput(decrypted, `🔓 расшифровано (сдвиг -${shift}, ${lang.toUpperCase()})`, `🔁 Обратный сдвиг ${shift} восстановил текст.`);
+        const shift = parseInt(shiftSlider.value);
+        const result = caesarTransform(text, -shift, lang);
+        outputDiv.innerText = result;
+        infoBadge.innerText = `🔓 расшифровано (сдвиг -${shift})`;
+        extraInfo.innerText = '';
     }
 
-    function autoCrackUi() {
+    function autoCrackAction() {
         const text = inputTextarea.value;
-        if (!text.trim()) { setOutput('❌ Нет текста для взлома', 'ошибка', ''); return; }
-        setOutput('⏳ Анализ частотного спектра...', 'анализ...', '');
+        if (!text.trim()) { outputDiv.innerText = '⚠️ Введите текст для взлома'; return; }
+        outputDiv.innerText = '⏳ Анализ частот...';
         setTimeout(() => {
-            const result = autoCrackMaster(text);
+            const result = autoCrack(text);
             if (!result || !result.best) {
-                setOutput('Не удалось взломать (мало букв или специфичный текст)', 'ошибка', 'Попробуйте ручной режим.');
+                outputDiv.innerText = '❌ Не удалось взломать (мало букв)';
                 return;
             }
-            const best = result.best;
-            const langName = result.lang === 'ru' ? 'русский (33 буквы)' : 'английский';
-            const confidence = (best.score * 100).toFixed(1);
-            let topInfo = `🏆 ТОП-3 вероятных сдвига: `;
+            outputDiv.innerText = result.best.decryptedText;
+            infoBadge.innerText = `🔓 взломан! сдвиг = ${result.best.shift} (${result.lang === 'ru' ? 'RU' : 'EN'}) | уверенность ${(result.best.score * 100).toFixed(1)}%`;
+            let topHtml = `🏆 ТОП-3: `;
             for (let i=0; i<Math.min(3, result.all.length); i++) {
-                topInfo += `сдв ${result.all[i].shift} (${(result.all[i].score*100).toFixed(0)}%)  `;
+                topHtml += `сдв ${result.all[i].shift} (${(result.all[i].score * 100).toFixed(0)}%)  `;
             }
-            setOutput(best.decryptedText, `🔓 взломан! сдвиг = ${best.shift} | ${langName} | уверенность ${confidence}%`, topInfo);
-        }, 20);
+            extraInfo.innerText = topHtml;
+        }, 50);
     }
 
-    function setExample(exampleType) {
-        if (exampleType === 'ru') {
+    function setExample(type) {
+        if (type === 'ru') {
             inputTextarea.value = 'Привет, как дела? Хорошо ли работает шифр Цезаря с буквой Ё?';
-        } else if (exampleType === 'en') {
+        } else if (type === 'en') {
             inputTextarea.value = 'The quick brown fox jumps over the lazy dog. Caesar cipher is amazing!';
-        } else if (exampleType === 'crypt') {
-            inputTextarea.value = 'Ъшарпё, шкш шпёш? Хршмцб ёнщтпёу ёрхм Щбзбщс ё сфктутёу.'.toUpperCase();
+        } else if (type === 'crypt') {
+            inputTextarea.value = 'Ъшарпё, шкш шпёш? Хршмцб ёнщтпёу ёрхм Щбзщс';
         }
-        refreshLanguageHint();
-        if (currentMode === 'manual') manualEncrypt(); 
-        else autoCrackUi();
+        if (currentMode === 'manual') manualEncrypt();
+        else autoCrackAction();
     }
 
-    function switchMode(mode) {
-        currentMode = mode;
-        if (mode === 'manual') {
-            manualPanelDiv.style.display = 'block';
-            autoPanelDiv.style.display = 'none';
-            infoBadge.innerHTML = `ручной режим, сдвиг ${shiftSlider.value}`;
-            refreshLanguageHint();
-            updateShiftRangeByLang(detectLanguage(inputTextarea.value || 'ru'));
-        } else {
-            manualPanelDiv.style.display = 'none';
-            autoPanelDiv.style.display = 'block';
-            infoBadge.innerHTML = `режим автоматического взлома`;
-            extraInfo.innerHTML = '🔍 Нажмите "АВТОВЗЛОМ" для частотного анализа';
-        }
+    function clearAll() {
+        inputTextarea.value = '';
+        outputDiv.innerText = '🧹 Очищено';
+        infoBadge.innerText = 'готов';
+        extraInfo.innerText = '';
     }
 
-    // обработчики
+    // Event listeners
+    encryptBtn.onclick = () => { if (currentMode === 'manual') manualEncrypt(); };
+    decryptBtn.onclick = () => { if (currentMode === 'manual') manualDecrypt(); };
+    crackBtn.onclick = () => { if (currentMode === 'auto') autoCrackAction(); };
+    clearBtn.onclick = clearAll;
+    
+    shiftSlider.oninput = () => {
+        shiftValueDisplay.innerText = `сдвиг = ${shiftSlider.value}`;
+    };
+
     modeOptions.forEach(opt => {
-        opt.addEventListener('click', () => {
+        opt.onclick = () => {
             modeOptions.forEach(o => o.classList.remove('active'));
             opt.classList.add('active');
-            const modeVal = opt.getAttribute('data-mode');
-            switchMode(modeVal);
-        });
-    });
-
-    shiftSlider.addEventListener('input', () => {
-        shiftValueDisplay.innerText = `сдвиг = ${shiftSlider.value}`;
-        if (currentMode === 'manual') infoBadge.innerHTML = `ручной режим, сдвиг ${shiftSlider.value}`;
-    });
-
-    encryptBtn.addEventListener('click', () => { if (currentMode === 'manual') manualEncrypt(); });
-    decryptBtn.addEventListener('click', () => { if (currentMode === 'manual') manualDecrypt(); });
-    crackAutoBtn.addEventListener('click', () => { if (currentMode === 'auto') autoCrackUi(); });
-    clearAllBtn.addEventListener('click', () => {
-        inputTextarea.value = '';
-        setOutput('🧹 Поля очищены', 'чисто', '');
-        refreshLanguageHint();
+            currentMode = opt.getAttribute('data-mode');
+            updateUI();
+        };
     });
 
     document.querySelectorAll('.ex-chip').forEach(chip => {
         if (chip.id === 'clearAllBtn') return;
-        chip.addEventListener('click', (e) => {
-            const type = chip.getAttribute('data-example');
-            if (type) setExample(type);
-        });
+        chip.onclick = () => setExample(chip.getAttribute('data-example'));
     });
 
-    refreshLanguageHint();
-    setOutput('✨ Готов к работе. Выберите режим и действие.', 'старт', 'Рекомендуем попробовать автовзлом для зашифрованных фраз');
-    // начальные значения
-    updateShiftRangeByLang('ru');
+    updateUI();
+    document.getElementById('inputLangHint').innerText = 'язык: русский';
 </script>
 </body>
 </html>
